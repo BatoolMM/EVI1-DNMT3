@@ -1,17 +1,17 @@
 ;
 ;	File 'mdout.mdp' was generated
-;	By user: Wafaa (501)
-;	On host: Batools-MacBook-Pro.local
-;	At date: Tue Dec 28 13:54:36 2021
+;	By user: m (501)
+;	On host: Ms-MacBook-Pro.local
+;	At date: Tue Dec 28 20:07:24 2021
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2019.1 (-:
 ;	
-;	Executable:   /Users/Wafaa/anaconda3/bin/gmx
-;	Data prefix:  /Users/Wafaa/anaconda3
-;	Working dir:  /Users/Wafaa/Desktop/GitHub/EVI1-DNMT3/solvation
+;	Executable:   /Users/m/opt/anaconda3/envs/gromacs/bin/gmx
+;	Data prefix:  /Users/m/opt/anaconda3/envs/gromacs
+;	Working dir:  /Users/m/Documents/GitHub/EVI1-DNMT3/S346A
 ;	Command line:
-;	  gmx grompp -f ../energy_mini/minim.mdp -c complex_solv_ions.gro -p topol.top -o ../energy_mini/em.tpr
+;	  gmx grompp -f ions.mdp -c mut_solv.gro -p topol.top -o ions.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -95,7 +95,7 @@ rlist                    = 1
 
 ; OPTIONS FOR ELECTROSTATICS AND VDW
 ; Method for doing electrostatics
-coulombtype              = PME
+coulombtype              = cutoff
 coulomb-modifier         = Potential-shift-Verlet
 rcoulomb-switch          = 0
 rcoulomb                 = 1.0

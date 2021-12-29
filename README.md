@@ -20,3 +20,22 @@ Saved it and manipulated in PyMOL as PDBx/mmCIF
 - Retain segment identifier and atoms ids
 
 - Write HEADER for every object
+
+## Force Field
+
+We used CHARMM36 force field and changed all the setting in the `.mdp` files to mach the CHARMM36 settings
+
+```
+constraints = h-bonds
+cutoff-scheme = Verlet
+vdwtype = cutoff
+vdw-modifier = force-switch
+rlist = 1.2
+rvdw = 1.2
+rvdw-switch = 1.0
+coulombtype = PME
+rcoulomb = 1.2
+DispCorr = no
+```
+
+Added SEP in `residuetype.dat` and changed `CAL` to `CL` in `ions.itp`

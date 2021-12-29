@@ -14,7 +14,7 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 module purge
 module load apps/gromacs_cuda/5.1.4/gcc-5.5.0+openmpi-1.10.7+fftw3_float-3.3.4+nvidia-cuda-8.0.61
 
-gmx grompp -f minim.mdp -c EVI1_solv_ions.gro -p topol.top -o em.tpr
+gmx grompp -f minim.mdp -c pho_solv_ions.gro -p topol.top -o em.tpr
 gmx mdrun -v -deffnm em -nb gpu
 gmx grompp -f nvt.mdp -c em.gro -r em.gro -p topol.top -o nvt.tpr
 gmx mdrun -deffnm nvt -nb gpu

@@ -23,7 +23,7 @@ Saved it and manipulated in PyMOL as PDBx/mmCIF
 
 ## Force Field
 
-We used CHARMM36 force field and changed all the setting in the `.mdp` files to mach the CHARMM36 settings
+We used [CHARMM36 force field](http://mackerell.umaryland.edu/charmm_ff.shtml#gromacs) and changed all the setting in the `.mdp` files to mach [the CHARMM36 settings](https://manual.gromacs.org/documentation/2019-rc1/user-guide/force-fields.html).
 
 ```
 constraints = h-bonds
@@ -39,3 +39,5 @@ DispCorr = no
 ```
 
 Added SEP in `residuetype.dat` and changed `CAL` to `CL` in `ions.itp`
+
+The advantages of CHARMM36 force field is that it was recently optimised to include functional groups such as phosphorylation. Other force fields can be modified as [here](http://amber.manchester.ac.uk/index.html) and [here](http://vienna-ptm.univie.ac.at/).

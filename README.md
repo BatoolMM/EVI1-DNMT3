@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Complex_structure.png" width= 70%>
+</p>
+
 # EVI1-DNMT3
 Molecular dynamics study for the interaction between EVI1-DNMT3
 

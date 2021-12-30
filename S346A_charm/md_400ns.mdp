@@ -43,7 +43,5 @@ ref_p                   = 1.0                   ; reference pressure, in bar
 compressibility         = 4.5e-5                ; isothermal compressibility of water, bar^-1
 ; Periodic boundary conditions
 pbc                     = xyz       ; 3-D PBC
-; Dispersion correction
-DispCorr                = EnerPres  ; account for cut-off vdW scheme
 ; Velocity generation
 gen_vel                 = no        ; Velocity generation is off 

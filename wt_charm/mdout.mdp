@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (10740)
 ;	On host: gpu02.pri.barkla.alces.network
-;	At date: Wed Dec 29 12:50:24 2021
+;	At date: Wed Dec 29 13:03:53 2021
 
 ;
 
@@ -160,15 +160,15 @@ tc-grps                  = Protein Non-Protein
 tau_t                    = 0.1     0.1
 ref_t                    = 300     300
 ; pressure coupling     
-pcoupl                   = no
-pcoupltype               = Isotropic
+pcoupl                   = Parrinello-Rahman
+pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau-p                    = 1
-compressibility          = 
-ref-p                    = 
+tau_p                    = 2.0
+compressibility          = 4.5e-5
+ref_p                    = 1.0
 ; Scaling of reference coordinates, No, All or COM
-refcoord-scaling         = No
+refcoord_scaling         = com
 
 ; OPTIONS FOR QMMM calculations
 QMMM                     = no
@@ -209,16 +209,16 @@ annealing-time           =
 annealing-temp           = 
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen_vel                  = yes
-gen_temp                 = 300
-gen_seed                 = -1
+gen_vel                  = no
+gen-temp                 = 300
+gen-seed                 = -1
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
 ; Type of constraint algorithm
 constraint_algorithm     = lincs
 ; Do not constrain the start configuration
-continuation             = no
+continuation             = yes
 ; Use successive overrelaxation to reduce the number of shake iterations
 Shake-SOR                = no
 ; Relative tolerance of shake

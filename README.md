@@ -1,11 +1,13 @@
+<p align="center">
+  <img src="Complex_structure.png" width= 70%>
+</p>
+
 # EVI1-DNMT3
 Molecular dynamics study for the interaction between EVI1-DNMT3
 
 ## Creating the DNMT3 Structure
 
-We used AlphaFold for accuracy > 70
-
-https://alphafold.ebi.ac.uk/entry/Q9Y6K1
+We used [AlphaFold](https://alphafold.ebi.ac.uk/entry/Q9Y6K1) for accuracy > 70
 
 Extracted residues 474-912
 

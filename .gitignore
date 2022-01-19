@@ -4,17 +4,14 @@ phospho/*.trr
 phospho/*.gro
 phospho/*.itp
 phospho/*.edr
-phospho/*.log
 phospho/*.cpt
 wt_charm/*.trr
 wt_charm/*.gro
 wt_charm/*.itp
 wt_charm/*.edr
-wt_charm/*.log
 wt_charm/*.cpt
 S346A_charm/*.trr
 S346A_charm/*.gro
 S346A_charm/*.itp
-S346A_charm/*.log
 S346A_charm/*.cpt
 S346A_charm/*.edr
